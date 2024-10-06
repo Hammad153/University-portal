@@ -1,0 +1,228 @@
+/* css custom styling property for login page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: papayawhip;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+marquee {
+    color: red;
+    font: 200;
+    background-color: cornsilk;
+}
+marquee span {
+    color:blue;
+}
+.backimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    height: 100%;
+    width: 350px;
+    position: fixed;
+}
+.container {
+    width: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h1 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container .logoimg {
+    padding-top: 20px;
+}
+.container input {
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: block;
+}
+.container input:active {
+    outline: none;
+    border-color: 1.5px solid blue;
+}
+.container input:focus {
+    border-color: 1.5px solid red;
+}
+.container button{
+    padding: 20px;
+    background-color: #727979;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0.5px solid black;
+    border-radius: 3px;
+    outline-color: none;
+    margin: 12px;
+    transition: all 0.3s ease;
+}
+.container button:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: hwb(180 0% 0%);
+    color: white;
+}
+.container button:active {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+.container .para-text{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-auto-columns: minmax(300px);
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+}
+.container .para-text .para {
+    background-color: white;
+    color:blue;
+    font-size: large;
+    border-radius: 4px;
+    padding: 5px;
+}
+.container .para-text .para a {
+    text-decoration: none;
+}
+.container .para-text .para a:active{
+    color:black;
+}
+.container .para-text .para:hover{
+    background-color: goldenrod;
+    color: darkblue;
+    border-radius: none;
+}
+.container .para-text .para:active{
+    background-color: gold;
+    color: black;
+    font-size: 20px;
+}
+
+
+.navbar {
+    height: 100vh;
+    margin-top: 2px;
+    margin-left: 0;
+    float: left;
+    position: fixed;
+    background-color:lavender ;
+    border-radius: 5px;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+ul li {
+    color: green;
+    font-size: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+}
+.hint{
+    display: none;
+    margin-left: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media query for smaller screen */
+@media screen and (max-width: 780px) {
+    .backimg {
+        width: 180px;
+    }
+    .container .para-text {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-auto-rows: minmax(150px, auto);
+        grid-auto-columns: minmax(300px);
+        grid-gap: 5px;
+        margin: 0 auto;
+        max-width: 300px;
+        padding: 24px;
+    }
+    #message {
+        text-align: right;
+        margin-right: 20px;
+       }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media query for smaller screen */
+@media screen and (max-width: 1200px) {
+    .backimg {
+        width: 150px;
+    }
+    .container .para-text {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-auto-rows: minmax(150px, auto);
+        grid-auto-columns: minmax(300px);
+        grid-gap: 5px;
+        margin:0 auto;
+        max-width: 100px;
+        padding: 10px;
+    }
+    .container button {
+        padding: 20px;
+        background-color: #727979;
+        color: white;
+        font-weight: normal;
+        text-transform: uppercase;
+        border: 0.5px solid black;
+        border-radius: 3px;
+        outline-color: none;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .container input {
+        margin-left: 200px;
+        padding-top: 10px;
+    }
+    .container h1 {
+        font-size: 14px;
+        margin-left: 200px;
+   }
+   .container .logoimg {
+    margin-left: 160px;
+   }
+   #message {
+    text-align: right;
+    margin-right: 20px;
+   }
+}
+
